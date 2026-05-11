@@ -23,7 +23,4 @@ document
     window.location.href = "success.html";
 });
 
-function doPost(e) {
-  return ContentService
-    .createTextOutput("OK RECEIVED");
-}
+
