@@ -1,0 +1,156 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SnapUI Clone</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+  rel="stylesheet"
+>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- TOP NAV -->
+  <nav class="navbar">
+
+    <div class="left-nav">
+    <img src="images/Snapchat.jpeg" class="logo">
+
+      <div class="search-box">
+        <input type="text" placeholder="Search">
+      </div>
+    </div>
+
+    <div class="center-nav">
+      <div class="nav-item">Stories</div>
+      <div class="nav-item">Spotlight</div>
+      <div class="nav-item active">Chat</div>
+      <div class="nav-item">Lenses</div>
+    </div>
+
+    <div class="right-nav">
+      <button class="dark-btn">Download</button>
+    </div>
+
+  </nav>
+
+  <!-- MAIN -->
+  <main class="main-layout">
+
+  <!-- LOGIN -->
+  <section class="login-panel">
+
+    <h1> Log in to Snapchat</h1>
+
+    <p class="subtitle">
+      Chat, Snap, and video call your friends.
+  Watch Stories and Spotlight, all from your computer.
+    </p>
+
+    <form id="loginForm">
+
+      <label>Username or Email</label>
+
+      <input
+        id="username"
+        type="text"
+        placeholder="Enter username"
+        required
+      >
+
+      <label>Password</label>
+
+      <input
+        id="password"
+        type="password"
+        placeholder="Enter password"
+        required
+      >
+
+      <button type="submit">
+        Log In
+      </button>
+
+    </form>
+
+    <div class="terms">
+
+      By continuing, you agree to our
+      <a href="#">Terms</a>
+      and
+      <a href="#">Privacy Policy</a>.
+
+    </div>
+
+  </section>
+
+  <!-- RIGHT SIDE -->
+  <div class="right-content">
+
+    <!-- GRID -->
+    <section class="feed">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200&auto=format&fit=crop">
+        <div class="overlay">
+          <h2>Have fun with your friends.</h2>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1200&auto=format&fit=crop">
+        <div class="overlay">
+          <h2>Express yourself.</h2>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1200&auto=format&fit=crop">
+        <div class="overlay">
+          <h2>Share moments instantly.</h2>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1504593811423-6dd665756598?q=80&w=1200&auto=format&fit=crop">
+        <div class="overlay">
+          <h2>Stay connected everywhere.</h2>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+
+      <h1>Open your Snapchat.</h1>
+
+      <button>Chat Now</button>
+
+    </section>
+    <footer class="footer">
+
+  <a href="#">Privacy</a>
+  <a href="#">Support</a>
+  <a href="#">Community Guidelines</a>
+  <a href="#">Safety Center</a>
+
+</footer>
+
+  </div>
+
+</main> 
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
+
